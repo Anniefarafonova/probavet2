@@ -1,0 +1,240 @@
+body {
+    background-color: black;
+}
+.page {
+    max-width: 1280px;
+    font-family: "Inter", "Arial", sans-serif;
+    margin: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+.header {
+    max-width: 880px;
+    height: 74px;
+    margin: 45px auto 0;
+    padding: 0;
+    border-bottom: 1px solid #545454;
+    box-sizing: border-box;
+}
+.header__logo {
+    max-width: 142px;
+    padding: 0 0 41px;
+    margin: 0;
+}
+.profile {
+    padding: 40px 0 50px;
+    margin: auto;
+    max-width: 880px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.avatar {
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0 30px 0 0;
+}
+.profile__list {
+    display: flex;
+}
+.profile__info {
+    margin: 0 244px 0 0;
+}
+
+.profil__text {
+    display: flex;
+    align-items: center;
+}
+.profil__title {
+    color: #ffffff;
+    max-width: 294px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0 18px 0 0;
+    padding: 0;
+}
+.profil__subtitle {
+    color: #ffffff;
+    max-width: 336px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 16px 0 0;
+}
+.add__button {
+    border: 2px solid white;
+    background: none;
+    max-width: 150px;
+    height: 50px;
+    padding: 0;
+}
+.add__button:hover {
+    opacity: 60%;
+}
+.add__button-img {
+    padding: 14px 64px;
+}
+.edit__button {
+    border: 1px solid white;
+    background: none;
+    max-width: 24px;
+    height: 24px;
+}
+.edit__button:hover {
+    opacity: 60%;
+}
+.elements {
+    margin: 0 auto;
+    max-width: 880px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+    gap: 20px 17px;
+    box-sizing: border-box;
+}
+.element {
+    max-width: 282px;
+    background-color: white;
+    border-radius: 10px;
+}
+.element__button {
+    border: none;
+    background: none;
+}
+
+.element__button:hover {
+    opacity: 50%;
+}
+.element__image {
+    width: 100%;
+}
+.element__list {
+    display: flex;
+    justify-content: space-around;
+}
+.element__title {
+    max-width: 246px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.footer {
+    margin: 0 auto;
+    max-width: 880px;
+    box-sizing: border-box;
+}
+
+.footer__copyright {
+    padding: 67px 0 60px;
+    margin: 0;
+    color: #545454;
+    width: 318px;
+    height: 18px;
+}
+  .popup {
+    position: fixed;
+    left: 0;
+    display: flex;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup__close-img {
+    position: absolute;
+}
+.popup__close {
+    border: none;
+    background: none;
+    position: absolute;
+    left: 430px;
+    top: -35px;
+}
+.popup__close:hover{
+    opacity:60%;
+}
+.popup__container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 430px;
+    height: 330px;
+    width: 100%;
+    position: relative;
+}
+.form__container-title {
+    max-width: 330px;
+    height: 23px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding: 34px 64px 54px 36px;
+    margin: 0;
+}
+.form__container-texts {
+    border: none;
+    max-width: 358px;
+    margin: 0 auto;
+    padding: 0;
+}
+.form__item {
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+    padding: 0 0 8px;
+    margin: 0;
+}
+.form__item:focus {
+    outline-color:rgba(58, 134, 145, 0.625);
+  }
+.form__item_name {
+    margin: 0 0 25px;
+}
+.popup__saved {
+    display: flex;
+    background-color: black;
+    max-width: 358px;
+    border: none;
+    margin: 48px auto 37px;
+    padding: 0;
+    border-radius: 2px;
+}
+.popup__saved:hover{
+    opacity: 80%;
+}
+.popup__saved-button {
+    max-width: 109px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    background: none;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 12px 0 16px;
+}
